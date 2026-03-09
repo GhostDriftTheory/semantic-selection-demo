@@ -1,6 +1,8 @@
 # MG-OS + GD-Attention Demo
 
-![Protect-then-select attention architecture](protect_then_select_architecture.png)
+<p align="center">
+  <img src="protect_then_select_architecture.png" width="720">
+</p>
 
 Related resources
 

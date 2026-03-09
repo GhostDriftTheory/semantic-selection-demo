@@ -4,7 +4,7 @@
   <img src="protect_then_select_architecture.png" width="720">
 </p>
 
-Related resources
+**Related resources**
 
 Paper (preprint)  
 MG-OS: https://zenodo.org/records/17712891  
@@ -17,7 +17,7 @@ Repository
 https://github.com/GhostDriftTheory/semantic-selection-demo
 
 
-Minimal architecture demo of:
+**Minimal architecture demo of:**
 
 - **Transformer-style softmax attention**
 - **MG-OS conditional barrier layer**

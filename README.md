@@ -29,6 +29,8 @@ This repository visualizes a compact architectural contrast:
 **Softmax mixes.**  
 **MG-OS + GD-Attention protects at-risk minority-important signals and then selects.**
 
+Because Beacon intervenes in the protection and final selection of semantic candidates, it should be treated as a high-sensitivity architecture requiring careful evaluation and interpretation.
+
 ---
 
 ## Core architecture path
@@ -144,6 +146,51 @@ Instead, the barrier is intended to activate only when the minority-important ca
 - or in an ambiguous competitive state.
 
 This makes the demo closer to an **architecture intervention** than to a fixed class preference.
+
+---
+
+## Ethical significance and careful handling
+
+Beacon should not be treated as a mere performance-oriented attention variant.
+
+The core issue in this architecture is not only how strongly candidates are weighted, but which candidates are protected, which candidates are allowed to collapse, and which candidate is ultimately granted representational priority. In other words, Beacon intervenes not only in numerical mixing, but in the structure of semantic competition itself.
+
+This matters because the architecture explicitly introduces a protect-then-select path:
+
+- a candidate judged to be at risk may be preserved by the MG-OS barrier,
+- and a final representative may then be determined by GD-Attention-style selection.
+
+Once this kind of intervention is introduced, the architecture can no longer be understood only through surface-level metrics such as accuracy gains or efficiency changes. What must also be examined is:
+
+- which candidates are protected,
+- under what conditions barrier activation occurs,
+- when rescue is appropriate,
+- when false rescue is introduced,
+- and how final selection changes the distribution of representational priority.
+
+For that reason, Beacon belongs to a technically and ethically sensitive category. It touches not only model behavior, but also broader questions of:
+
+- explanation,
+- accountability,
+- safety boundary design,
+- minority-important signal preservation,
+- and the responsible interpretation of internal selection dynamics.
+
+This does **not** mean that the repository claims to solve AI ethics, nor does it claim consciousness, agency, or moral status for current AI systems. The point is narrower and more concrete:
+
+**if an architecture explicitly intervenes in which semantic candidates survive and which one is selected, then that architecture should be evaluated and communicated with unusual care.**
+
+In practical terms, Beacon should therefore not be read as a simple "accuracy trick" or as a generic architectural tweak. Its significance lies in making internal selection structure more visible and more deliberate. That visibility is valuable, but it also creates design responsibility.
+
+Accordingly, this repository is presented as a compact research demo for careful inspection of:
+
+- rescue behavior,
+- collapse avoidance,
+- barrier activation,
+- Gamma proxy changes,
+- and the structural difference between mix-first and protect-then-select paths.
+
+It is **not** presented as a ready-made high-stakes deployment recipe. Any future use in socially sensitive or safety-critical contexts would require case-specific evaluation, interpretability analysis, failure-mode study, and explicit responsibility design.
 
 ---
 
